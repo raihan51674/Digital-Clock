@@ -434,7 +434,7 @@ option{
 @media (max-width:848px){
   .cards{
     flex-direction: column;
-    width: 100%;
+/*     width: 100%; */
 }
     .card{
         width:100%
