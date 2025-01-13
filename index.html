@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My-Daily-Day</title>
+</head>
+
+<body>
+  
+
+  <div class="container">
+    <h1 class="title">Every Day Planing</h1>
+    <div class="toggle-switch">
+      <span class="head">Time limit 2 hours ->Learnig ->Hardwork -> Practics</span>
+    </div>
+
+    <div class="cards">
+
+
+
+      <div class="card active " id="card-2">
+        <h1 class="card-title">knowledge Gained</h1>
+        <h2 class="card-price" id="pro-price">Morn <span> step 1</span> </h2>
+
+        <select id="maus">
+          <option value="500">7:00 am -> 9:00 am</option>
+          <option value="100">9:00 am -> 11:00 am</option>
+          <option value="1500">11:00 am -> 1:00 pm</option>
+        </select>
+        <span class="note"> Morning active Time </span>
+
+        <ul class="card-plan">
+          <li> 7:00 am -> 9:00 am Book reading </li>
+          <li> 9:00 am -> 11:00 am Note Read</li>
+        </ul>
+
+      </div>
+      <div class="card active" id="card-2">
+        <h1 class="card-title">Skills Achive</h1>
+        <h2 class="card-price" id="pro-price">Noon <span> step 2</span> </h2>
+
+        <select id="maus">
+          <option value="500">1:00 pm -> 3:00 pm</option>
+          <option value="100">3:00 pm -> 5:00 pm</option>
+        </select>
+        <span class="note"> Afternoon active Time </span>
+
+        <ul class="card-plan">
+          <li> 1:00 pm -> 3:00 pm Practics project </li>
+          <li> 3:00 pm -> 5:00 pm Practics </li>
+        </ul>
+
+      </div>
+      <div class="card active" id="card-2">
+        <h1 class="card-title">Exploration</h1>
+        <h2 class="card-price" id="pro-price">Even<span> step 3</span> </h2>
+
+        <select id="maus">
+          <option value="500">5:00 pm -> 7:00 pm</option>
+        </select>
+        <span class="note"> Evening active Time </span>
+
+        <ul class="card-plan">
+          <li> 5:00 pm -> 7:00 pm Deep searching </li>
+          <li> 5:00 pm -> 7:00 pm search</li>
+        </ul>
+
+      </div>
+      <div class="card active" id="card-2">
+        <h1 class="card-title">Memorisation</h1>
+        <h2 class="card-price" id="pro-price">Night <span> step 4</span> </h2>
+
+        <select id="maus">
+          <option value="500">7:00 pm -> 9:00 pm</option>
+          <option value="100">9:00 pm -> 12:00 pm</option>
+        </select>
+        <span class="note"> Night active Time </span>
+
+        <ul class="card-plan">
+          <li> 7:00 pm -> 9:00 pm all of study</li>
+          <li> 9:00 pm -> 12:00 pm Study Deep</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="container-clock"> 
+      <div class="bg-elem"></div>
+      <div class="bg-elem"></div>
+      <div class="bg-elem"></div>
+      <div class="content">
+        <p>Md.Raihan Islam</p>
+        <h3>Digital Clock with Timer</h3>
+        <p class="type">Clock</p>
+      </div>
+
+      <div class="main-container">
+        <div class="clock">
+          <div class="wrapper">
+            <div class="main">
+              <div class="hour">
+                <p class="number" id="hour">20</p>
+                <p>hours</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="min">
+                <p class="number" id="min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="sec">
+                <p class="number" id="sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="ampm">
+                <p class="number" id="ampm">AM</p>
+                <p id="other-ampm">PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn" id="stopwatch-btn">Stopwatch</button>
+            <button class="btn" id="timer-btn">Timer</button>
+          </div>
+        </div>
+
+        <div class="stopwatch hidden">
+          <div class="wrapper">
+            <div class="main">
+              <div class="hour">
+                <p class="number" id="stopwatch-hour">00</p>
+                <p>hours</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="min">
+                <p class="number" id="stopwatch-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="sec">
+                <p class="number" id="stopwatch-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="ms">
+                <p class="number" id="stopwatch-ms">00</p>
+                <p>miliseconds</p>
+              </div>
+            </div>
+          </div>
+          <div class="laps">
+            
+          </div>
+          <div class="btns">
+            <button class="btn start-stopwatch">Start</button>
+            <button class="btn lap-stopwatch hidden">Lap</button>
+            <button class="btn reset-stopwatch">Reset</button>
+            <button class="btn back-btn">Back</button>
+          </div>
+        </div>
+
+        <div class="timer hidden">
+          <div class="wrapper">
+            <div class="main">
+              <div class="hour">
+                <p class="number" id="timer-hour">00</p>
+                <p>hours</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="min">
+                <p class="number" id="timer-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="sec">
+                <p class="number" id="timer-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="ms">
+                <p class="number" id="timer-ms">00</p>
+                <p>miliseconds</p>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn start-timer">Start</button>
+            <button class="btn stop-timer hidden">Stop</button>
+            <button class="btn reset-timer">Reset</button>
+            <button class="btn back-btn">Back</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
