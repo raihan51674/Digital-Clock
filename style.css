@@ -407,14 +407,14 @@ option{
 
 
 
-@media (max-width:1112px){
+@media (max-width:1280px){
     .cards{
         flex-direction: column;
         width: 50%;
     }
 
     .card{
-        width: 50%;
+        width: 100%;
         flex-direction: column;
     }
 }
@@ -422,23 +422,23 @@ option{
 @media (max-width:848px){
   .cards{
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
     .card{
-        width:50%
+        width:100%
         
     }
 }
 
-@media (max-width:674px){
+@media (max-width:768px){
 
   .cards{
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
    
     .card{
-        width: 50%;
+        width: 100%;
         
     }
 }
@@ -446,10 +446,10 @@ option{
 @media (max-width:500px){
   .cards{
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
   
     .card{
-        width: 90%;
+        width: 100%;
     }
 }
