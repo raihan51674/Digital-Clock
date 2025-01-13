@@ -209,7 +209,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 50%;
   }
   .content h3 {
     font-size: 10px;
