@@ -206,6 +206,9 @@ i {
     padding: 0 20px;
     width: 100%;
   }
+  .p{
+    font-size:10px;
+  }
   .wrapper{
     display: flex;
     flex-direction: column;
